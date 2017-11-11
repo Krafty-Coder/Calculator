@@ -1,0 +1,45 @@
+<!DOCTYPE Html>
+<html>
+<head>
+    <link rel="stylesheet" href="calc.css" type="text/css"/>
+    <link rel="icon" type="image/jpg/png/gif" href="logo.png">
+    <script src="calc.js" type="text/javascript"></script>
+    <title>
+       Calc 
+    </title>
+</head>
+
+<body>
+    <div class="Heading" href="ca.html">
+        <h1 aria-dropeffect="popup" >CALCULATOR</h1>
+    </div>
+    <div class="whole">
+        <form name="calcform">
+            <input id="some" class="formstuff" type="text" name="txt1" style="text-align: right" readonly="readonly" disabled>
+            <input id="btns" type="button" name="clear" value="C" onclick="reset()">
+            <br/>
+            <div class="buttons">
+                <input id="btns" type="button" name="num9" value="9" onclick="calc(num9.value)">
+                <input id="btns" type="button" name="num8" value="8" onclick="calc(num8.value)">
+                <input id="btns" type="button" name="num7" value="7" onclick="calc(num7.value)">
+                <input id="btns" type="button" name="add" value="+" onclick="calc(add.value)">
+                <br/>
+                <input id="btns" type="button" name="num6" value="6" onclick="calc(num6.value)">
+                <input id="btns" type="button" name="num5" value="5" onclick="calc(num5.value)">
+                <input id="btns" type="button" name="num4" value="4" onclick="calc(num4.value)">
+                <input id="btns" type="button" name="sub" value="- " onclick="calc(sub.value)">
+                <br/>
+                <input id="btns" type="button" name="num3" value="3" onclick="calc(num3.value)">
+                <input id="btns" type="button" name="num2" value="2" onclick="calc(num2.value)">
+                <input id="btns" type="button" name="num1" value="1" onclick="calc(num1.value)">
+                <input id="btns" type="button" name="mult" value="* " onclick="calculate(mult.value)">
+                <br/>
+                <input id="btns" type="button" name="div" value="/ " onclick="calc(div.value)">
+                <input id="btns" type="button" name="num0" value="0" onclick="calc(num0.value)">
+                <input id="btns" type="button" style="margin-left: 0px;" name="mod" value="%" onclick="calc(mod.value)">
+                <button id="btns1" type="button" style="vertical-align: middle;" name="equ" value="=" onclick="txt1.value=eval(txt1.value)"><span>=</span></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
